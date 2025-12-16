@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi página</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #111;
+      color: white;
+      text-align: center;
+      padding-top: 50px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      width: 80%;
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Bienvenido</h2>
+
+  <div id="auth">
+    <input id="email" type="email" placeholder="Correo">
+    <input id="password" type="password" placeholder="Contraseña">
+    <br>
+    <button onclick="login()">Entrar</button>
+    <button onclick="register()">Registrarse</button>
+    <p id="msg"></p>
+  </div>
+  <script>
+function login() {
+  document.getElementById("msg").innerText =
+    "Intentando iniciar sesión...";
+}
+
+function register() {
+  document.getElementById("msg").innerText =
+    "Intentando registrarse...";
+}
+</script>
+</body>
+</html>
